@@ -5,5 +5,10 @@
     </head>
     <body>
         <h1>Hello, {{ user.username }}!</h1>
+        <div>
+            {% for post in posts %}
+                <p>{{ post.author.username }} says: <b>{{ post.body }}</b></p>
+            {% endfor %}
+        </div>
     </body>
 </html>
