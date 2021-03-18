@@ -1,7 +1,6 @@
 {% extends "base.html" %}
 
 {% block content %}
-
 <h1>Sign In</h1>
 <form method="POST" action="">
     <p>
@@ -13,10 +12,10 @@
         <input name="pass" id="password" type="password">
     </p>
     <p>
-    <label for="remember">Remember-me</label>
-    <input name="remember" type="checkbox" id="remember">
+        <label for="remember">Remember-me</label>
+        <input type="checkbox" id="remember" name="remember">
     </p>
     <button>Sign In</button>
 </form>
 
-{% endblock %}  
+{% endblock %}
